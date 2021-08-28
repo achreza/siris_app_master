@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!--<ImageView-->
+                <!--android:id="@+id/sale"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:focusable="false"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:src="@drawable/ic_local_grocery_store_24dp"-->
+                <!--android:focusableInTouchMode="false"-->
+                <!--android:text="@string/sale_button" />-->
+
+            <TextView
+                android:id="@+id/rp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16dp"
+                android:text="Rp."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="16sp"
+                android:gravity="bottom"
+                />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:paddingLeft="4dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="21sp"
+                android:gravity="bottom"
+                android:textColor="@color/peterriver"
+                 />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="Stok"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="13sp"
+                android:gravity="bottom"
+                />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="end|center_vertical"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="36sp"
+                android:textColor="@color/peterriver"
+                android:textColorHighlight="@color/peterriver"
+                 />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gantipw">
+
+
+
+    <EditText
+        android:layout_margin="10dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/shapeuserpass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/passwordlama"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint=" Password Lama"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/peterriver"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:layout_margin="10dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/shapeuserpass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:layout_below="@id/passwordlama"
+        android:ems="10"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/passwordbaru"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint=" Password Baru"
+        android:textColor="@color/peterriver"/>
+
+    <EditText
+        android:layout_below="@id/passwordbaru"
+        android:layout_margin="10dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/shapeuserpass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/passwordulang"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint=" Ulangi Password Baru"
+        android:textColor="@color/peterriver"/>
+
+    <Button
+        android:id="@+id/btn_gantipw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/peterriver"
+        android:text="Ganti Password"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/passwordulang"/>
+
+</RelativeLayout>

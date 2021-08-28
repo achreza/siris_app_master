@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page_laporan"
+    android:layout_gravity="center"
+    >
+
+    <RelativeLayout
+
+        android:layout_marginTop="30dp"
+        android:id="@+id/pilihtgl"
+        android:paddingStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:background="#ffffff"
+            android:id="@+id/mulaitanggal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+                <!--android:layout_below="@id/password"/>-->
+
+            <TextView
+
+                android:layout_marginStart="20dp"
+                android:id="@+id/tv_dateresult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Awal"
+                android:textColor="@color/peterriver"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:layout_below="@id/mulaitanggal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/akhirtanggal">
+
+
+                <!--android:layout_below="@id/password"/>-->
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:id="@+id/tv_dateresult1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Akhir"
+                android:textColor="@color/peterriver"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lLihatButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/akhirtanggal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btnLihatLaporan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/peterriver"
+                android:text="Lihat Laporan"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

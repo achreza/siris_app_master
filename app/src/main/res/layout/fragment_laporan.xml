@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".laporan" android:layout_gravity="center_vertical"
+    android:background="@color/biruenom">
+
+    <RelativeLayout
+
+        android:paddingStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/mulaitanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:background="@drawable/shapeuserpass"
+                android:id="@+id/bt_datepicker"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Tanggal awal" />
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:id="@+id/tv_dateresult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_datepicker"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/mulaitanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/akhirtanggal">
+
+            <Button
+                android:background="@drawable/shapeuserpass"
+                android:id="@+id/bt_datepicker1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Tanggal akhir" />
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:id="@+id/tv_dateresult1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_datepicker1"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/akhirtanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lLihatButton">
+
+            <Button
+                android:background="@drawable/shapeuserpass"
+                android:id="@+id/btnLihatLaporan"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Lihat Laporan" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</FrameLayout>
